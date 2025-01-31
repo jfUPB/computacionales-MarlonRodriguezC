@@ -5,7 +5,7 @@ positivo el cual luego C-Instructions manipulara y hara las operaciones y le dir
 2. A-instructions se representa como: 0 vvv vvvv vvvv vvvv, y la 'v' es la  que representa los bits dentro del valor por ejemplo para establecer cifras como el numero 5 se tomaria de la sigueinte forma: 0000000000000101
 Si aumentamos este numero, la cifra binaria cambiaria aumentando los ceros y unos:  0000000000110010
 
-Si fuese un numero mas elevado como 100 la cigra cambiaria a 0000000001100100
+Si fuese un numero mas elevado como 100 la cifra cambiaria a 0000000001100100
 
 
 
