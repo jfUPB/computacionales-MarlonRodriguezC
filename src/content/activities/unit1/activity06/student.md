@@ -16,17 +16,18 @@ El termino puntero hace referencia a cuando se almacena una variable en la direc
 
 Un ejemplo puede ser el uso del comando @foo el cual si guardamos que es igual a una variable M,
 
+``` asm
 @foo
 M=10 
-
+```
 y se toma el puntero 'ptr'
-
+``` asm
 @ptr
 M=foo 
-
+```
 y ahora foo podra tomar direccionar A o D en la cifra guardada de M
-
+``` asm
 @ptr
 A=M 
 D=M
-
+```
