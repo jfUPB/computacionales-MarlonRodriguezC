@@ -26,5 +26,5 @@ M=D
 4.Los valores A, D y M suelen cambiar segun la orden recibida pero en este caso se puede ver como se iguala el valor de D con A al usar "D=A"
 
 
-COMP-un1-ac5.png
+![Resultado del programa](../../../../assets/COMP-un1-ac5.png) 
 
