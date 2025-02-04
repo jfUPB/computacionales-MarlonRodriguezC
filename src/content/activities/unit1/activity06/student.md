@@ -12,4 +12,21 @@ la cifra de D ya antes hablada. En el caso de D=M, D tomara el numero guardado e
 
 Explica con tus palabras el concepto de "puntero" en el contexto de la memoria y proporciona un ejemplo sencillo en lenguaje ensamblador Hack. (Puedes usar el ejemplo de la página 61 del documento como inspiración, pero adáptalo a un caso más simple).
 
-Entrega: respuestas a las preguntas y un ejemplo de código en ensamblador que ilustre el concepto de puntero y su uso para acceder a la memoria.
+El termino puntero hace referencia a cuando se almacena una variable en la direccion de otra variable, el puntero puede manipular el sistema de almacenaje para lograr hacer el proceso mas eficiente y facil.
+
+Un ejemplo puede ser el uso del comando @foo el cual si guardamos que es igual a una variable M,
+
+@foo
+M=10 
+
+y se toma el puntero 'ptr'
+
+@ptr
+M=foo 
+
+y ahora foo podra tomar direccionar A o D en la cifra guardada de M
+
+@ptr
+A=M 
+D=M
+
