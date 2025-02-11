@@ -1,0 +1,11 @@
+@SCREEN
+M=-1
+D=A
+@KBD
+@7
+M=D
+@132
+D=D-A
+@7
+M=D
+D=D-A
