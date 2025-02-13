@@ -47,4 +47,4 @@ M=D
 0;JMP
 ```
 
-![Resultado del programa](../../../../assets/video-unidad1.mp4)
+[Link al video](https://youtu.be/mCLeXBBD_pY)
