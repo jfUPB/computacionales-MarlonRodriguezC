@@ -1,3 +1,4 @@
+```asm
 @SCREEN
 M=-1
 D=A
@@ -44,3 +45,6 @@ D=A
 M=D
 @INFINITE_LOOP
 0;JMP
+```
+
+
