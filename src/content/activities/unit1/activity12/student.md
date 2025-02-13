@@ -47,4 +47,4 @@ M=D
 0;JMP
 ```
 
-
+![Resultado del programa](../../../../assets/video-unidad1.mp4)
