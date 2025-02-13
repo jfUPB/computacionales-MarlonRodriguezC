@@ -21,5 +21,6 @@ M=0
 A=A-1
 M=-1         // Dibuja el nuevo píxel
 D=A
+M=D
 @INFINITE_LOOP
 0;JMP
