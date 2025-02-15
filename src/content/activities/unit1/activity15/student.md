@@ -10,7 +10,10 @@ gráficos,el ensamblador podria optimizar esas tareas reduciendo el uso innecesa
 un método informático que permite procesar múltiples datos con una sola instrucción como aparece en la imagen
 
 
+![Resultado del programa](../../../../assets/image008.jpg) 
 
 
 Aunque esta solo pueda hacer estos calculos con un solo tipo de operacion, y no con varias como sumas,  restas, multiplicacion y division al mismo
 tiempo, igualmente llega a ser una excelente herramienta
+
+![Resultado del programa](../../../../assets/image010.jpg) 
