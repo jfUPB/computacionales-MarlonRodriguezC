@@ -23,4 +23,4 @@
  (END)
  @END
  ```
-El ciclo for tanto en ensamblador como en 
+El ciclo for tanto en ensamblador como en C++ toman la misma cantidad en el ciclo sum  
