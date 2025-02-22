@@ -1,25 +1,25 @@
 
 **Solucion**: 
 ``` c
- @sum // sum refers to some memory location.
- M=0 // sum=0
+ @sum
+ M=0 
  (LOOP)
  int i=1;
  int sum=0;
  @i
- D=M // D=i
+ D=M 
  @100
- D=D-A // D=i-100
+ D=D-A 
  @i
- M=M+1 // i=i+1
+ M=M+1 
  @END
- D;JGT // If(i-100)>0 gotoEND
+ D;JGT 
  @i
- D=M // D=i
+ D=M 
  @sum
- M=D+M // sum=sum+i
+ M=D+M 
  @LOOP
- 0;JMP // GotoLOOP
+ 0;JMP 
  (END)
  @END
  ```
