@@ -1,6 +1,6 @@
 
 **Solucion**: 
-``` c
+```asm
  @sum
 M=0         
 @i
