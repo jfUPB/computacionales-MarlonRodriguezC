@@ -1,3 +1,4 @@
+```asm
 @sum
 M=0          
 
@@ -40,3 +41,4 @@ M=M+1      //le sube un numero a la direccion a guardar
 (END)
 @END
 0;JMP   
+```
