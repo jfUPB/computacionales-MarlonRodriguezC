@@ -1,3 +1,4 @@
+```asm
 // esto da el SCREEN
 @16384
 D=A
@@ -77,3 +78,4 @@ M=D
 
     @retorno_pantalla
     0;JMP 
+```
