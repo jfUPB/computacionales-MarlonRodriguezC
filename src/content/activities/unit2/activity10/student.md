@@ -1,51 +1,79 @@
-// crea pantalla
-@16384 
-D=A 
-@15 
-M=D 
-//no hace nada
+// esto da el SCREEN
+@16384
+D=A
+@16
+M=D
 
-@LOOP 
-@24576 
-D=M 
-@CHECK_B 
-D;JEQ 
+(inicio)
+    // Leer el teclado
+    @KBD
+    D=M
+    @inicio
+    D;JEQ  
 
-// salta si se toca la tecla    
+ 
+    @17
+    M=D  
 
-@16 
-D=M 
-@16384 
-D=D-A 
-@4 
-D;JLE 
-@16 
-AM=M-1 
-M=0 
-@4 
-0;JMP
+    @pantalla
+    0;JMP
 
-// empieza a pintar 
+(retorno_pantalla)
+    @inicio
+    0;JMP  // esto es el return
 
-(CHECK_B) 
-@98 // Valor ASCII de 'b'
-D=D-A 
-@PAINT 
-D;JEQ 
-@LOOP 
-0;JMP
+(pantalla)
+    @17
+    D=M  
 
-(PAINT) 
-@16 
-D=M 
-@16384 
-D=D-A 
-@4 
-D;JGE 
-@16 
-A=M 
-M=-1 
-@16 
-M=M+1 
-@LOOP 
-0;JMP 
+    // esto es p 
+    @112
+    D=D-A
+    @PINTAR
+    D;JEQ  
+
+    // y esta wea b
+    @17
+    D=M
+    @98
+    D=D-A
+    @BORRAR
+    D;JEQ  
+
+    @retorno_pantalla
+    0;JMP
+
+(PINTAR)
+    @16
+    D=M  
+    @16395
+    D=A  
+
+(PINTAR_LOOP)
+    @16
+    A=M
+    M=-1  
+    @16
+    M=M+1 //le aumenta 
+
+    @retorno_pantalla
+
+    0;JMP 
+
+(BORRAR)
+    @16
+    D=M  
+    @16395
+    D=A 
+
+(BORRAR_LOOP)
+    @16
+    A=M
+    M=0  // Borra pixel 
+    @16
+    AM=M-1  //le disminuye
+
+    M=0
+
+    @retorno_pantalla
+    0;JMP 
