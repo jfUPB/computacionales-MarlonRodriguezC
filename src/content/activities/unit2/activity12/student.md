@@ -2,8 +2,8 @@ Enunciado: vas a inventar un ejemplo, diferente a los de la unidad, en lenguaje 
 
 #### Condicionales:
 Un ejemplo facil podria ser, si el numero ingresado es mayor a 0 el codigo nos dara como respuesta un 1 
+```C#
 using System;
-
 class Program
 {
     static void Main()
@@ -19,6 +19,9 @@ class Program
         }
     }
 }
+```
+Ahora en ensamblador 
+
 #### Ciclos while
 Un ciclo while podria ser si un int que empieza en 1 llega hasta 10 con ayuda de un sum la cual ira sumando la cifra consigo misma
 
