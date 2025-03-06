@@ -2,7 +2,23 @@ Enunciado: vas a inventar un ejemplo, diferente a los de la unidad, en lenguaje 
 
 #### Condicionales:
 Un ejemplo facil podria ser, si el numero ingresado es mayor a 0 el codigo nos dara como respuesta un 1 
+using System;
 
+class Program
+{
+    static void Main()
+    {
+        // Solicitar al usuario que ingrese un número
+        Console.Write("Ingresa un número: ");
+        int numero = int.Parse(Console.ReadLine());
+
+        // Condicional para verificar si el número es mayor a 0
+        if (numero > 0)
+        {
+            Console.WriteLine("1");
+        }
+    }
+}
 #### Ciclos while
 Un ciclo while podria ser si un int que empieza en 1 llega hasta 10 con ayuda de un sum la cual ira sumando la cifra consigo misma
 
