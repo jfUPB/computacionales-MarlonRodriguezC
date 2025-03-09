@@ -257,12 +257,191 @@ class Program
 ```
 Ahora en ensamblador 
 ```asm
+@sum
+M=0
+
+@i
+M=1
+
+@0     // Dirección inicial
+D=A
+@inicio
+M=D
+
+@ptr    // Puntero a la dirección donde se cambiará el 2 por 3
+M=0
+
+(LOOP)
+@i
+D=M
+@11    // Comparador hsdfajfa
+D=D-A
+@END
+D;JGE    // Si es mayor esto sale del bucle
+
+@i
+D=M
+@sum
+M=D+M   // sum es el que tendrá que dar 55
+
+@inicio
+A=M        // Guarda los valores
+M=D
+
+// Verifica si el número almacenado es 2 y lo cambia a 3
+@2
+D=A
+@inicio
+A=M
+D=M-D
+@SKIP
+D;JNE  // Si no es 2, salta
+
+@3
+D=A
+@inicio
+A=M
+M=D   // Cambia el 2 por 3
+
+(SKIP)
+@i
+M=M+1   // Incrementa el índice
+
+@inicio
+M=M+1   // Incrementa la dirección
+
+@LOOP
+0;JMP
+
+(END)
+@END
+0;JMP
 
 ```
 #### Llamado a funciones con parámetros.
+```C#
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Ingrese un número: ");
+        int numero = int.Parse(Console.ReadLine());
+        
+        VerificarEstado(numero);
+    }
+
+    static void VerificarEstado(int num)
+    {
+        if (num > 0)
+        {
+            CambiarEstado();
+        }
+        else
+        {
+            Console.WriteLine("El número no es mayor a 0.");
+        }
+    }
+
+    static void CambiarEstado()
+    {
+        Console.WriteLine(2); // Señal de que el número es mayor a 0
+    }
+}
+
+```
+
+```asm
+@INPUT
+M=1  // El numero que se debe cambiar para que sea mayor o menor que y nos de el writeline 2
+
+@PROMPT
+0;JMP  // Saltamos a la sección donde pedimos el número
+
+(PROMPT)
+@INPUT
+D=M
+@CHECK
+D;JMP  // Verificamos la condición
+
+(CHECK)
+@INPUT
+D=M
+@0
+D=D-A  // Restamos 0 para verificar si es mayor
+@SHOW_TWO
+D;JGT  // Si es mayor que 0, saltamos a SHOW_TWO
+
+@END
+0;JMP  // Si no es mayor a 0, terminamos el programa
+
+(SHOW_TWO)
+@2
+D=A
+@16
+M=D  // Guardamos el número 2 en la dirección 16 de la RAM
+
+(END)
+@END
+0;JMP  // Loop infinito al final
+```
+
 
 #### Llamado a funciones con retorno de parámetros (no lo trabajamos en la unidad pero tienes las herramientas para proponer un ejemplo)
 NO OLVIDES SIMULAR CADA EJEMPLO en lenguaje ensamblador para asegurar que está correcto
+En este proyecto se dbee hacer un return sumandole un numero al numero escrito (en este caso en asm es un 5 y tiene que dar 6)
+```C#
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Ingrese un número: ");
+        int numero = int.Parse(Console.ReadLine());
+
+        int resultado = Siguiente(numero);
+
+        Console.WriteLine("El numero que le sigue a ese numero es: " + resultado);
+    }
+
+    static int Siguiente(int numero)
+    {
+        return numero + 1; // Retorna el doble del número
+    }
+}
+
+```
+
+```asm
+
+@5  
+D=A
+@10 
+M=D
+
+@10  Cargar el numero desde RAM
+D=M  
+@SUMA
+0;JMP 
+ // Saltar a la función Suma
+@END
+0;JMP 
+
+(SUMA)
+D=D+1  // D = D + 1
+@17  
+M=D   // Guardar el resultado en 17
+
+//return
+@8
+0;JMP
+
+// Fin del programa
+(END)
 
 
+
+```
 Entrega: el programa en alto nivel y su equivalente en ensamblador.
