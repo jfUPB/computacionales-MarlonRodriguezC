@@ -1,3 +1,4 @@
+```C++
 #include <iostream>
 
 using namespace std;
@@ -50,7 +51,7 @@ int main() {
     return 0;
 }
 
-
+```
 Por qué la versión de swapPorValor no logra intercambiar los valores de x e y en el main()?
 
 porque esta crea unas copias de lo que serian las variables dentro de la funcion, y su modificacion acaba cuando la funcion termina su ultima linea 
