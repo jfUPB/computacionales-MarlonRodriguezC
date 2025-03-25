@@ -1,3 +1,4 @@
+``` bash
 +-------------------------------+
 |       Segmento de código      |
 |   (instrucciones, funciones)  |
@@ -10,8 +11,9 @@
 +-------------------------------+
 |           Stack               | <--- Variables locales
 +-------------------------------+
+``` 
 
-
+``` bash
 +-------------------------------+
 | main, suma, funcionConStatic()|
 |      crearArrayHeap()         |
@@ -27,3 +29,4 @@
 |variable local 'b': 000000B2AA3EF954|
 |variable local 'c' (resultado): 000000B2AA3EF974| 
 +-------------------------------+
+``` 
