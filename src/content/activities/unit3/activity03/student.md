@@ -31,4 +31,4 @@
 |variable local 'c' (resultado): 000000A68A0FF7E4                      |
 +----------------------------------------------------------------------+
 ``` 
-![Resultado del programa](../../../../assets/unidad3.4.jpeg)
+![Resultado del programa](../../../../assets/unidad3.32.jpeg)
