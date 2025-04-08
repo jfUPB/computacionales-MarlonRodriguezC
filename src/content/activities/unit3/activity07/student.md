@@ -33,3 +33,4 @@ bytes, y como se representan en bytes, los objetos en C++ son creaciones apartir
 
 #### Captura de pantalla del depurador mostrando la variable p y su dirección de memoria.
 
+![Resultado del programa](../../../../assets/unidad3-ac8.jpeg)
