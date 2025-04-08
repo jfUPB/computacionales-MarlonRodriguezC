@@ -1,3 +1,4 @@
+![Resultado del programa](../../../../assets/unidad3-ac8.jpeg)
 Al escribir 0A en hexadecimal, dentro del valor decimal obtengo 10 decimal y al escribir 
 14 en Hexadecimal, dnetro de valor decimal obtengo 20, los cuales son los valores declarados
 dentro del codigo
