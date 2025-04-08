@@ -1,3 +1,4 @@
+####  ¿Qué valor en decimal obtienes? Escribe 14 ¿Qué valor en decimal obtienes? ¿Qué observas?
 Al escribir 0A en hexadecimal, dentro del valor decimal obtengo 10 decimal y al escribir 
 14 en Hexadecimal, dnetro de valor decimal obtengo 20, los cuales son los valores declarados
 dentro del codigo
