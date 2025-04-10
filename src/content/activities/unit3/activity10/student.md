@@ -1,11 +1,12 @@
 Entrega:
 
 #### ¿Qué ocurre después de llamar a la función cambiarNombre?
-Se crea una copia del punto original  y se cambia su nombre a "copia"
+Se crea una copia del punto original  y se cambia su nombre a "cambiado" y este se destruye al final delcodigo
 #### ¿Por qué aparece el mensaje Destructor: Punto cambiado(70, 80) destruido.?
+Porque "cambiado" es el nombre con el cual se le otorgo a la copia y porque dentro de estaa funcion ~Punto su principal
+funcion es mostrar este mensaje 
 #### ¿Por qué original sigue existiendo luego de llamar cambiarNombre?
-
-
+Esto se debe ya que el original 
 #### ¿En qué parte del mapa de memoria se encuentra original y en qué parte se encuentra p? ¿Son el mismo objeto? (recuerda usar siempre el depurador para responder estas preguntas).
 
 
