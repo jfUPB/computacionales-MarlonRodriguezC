@@ -25,3 +25,10 @@ Punto* pBloque2 = nullptr;
 pBloque2 =  new Punto(500, 600);
 
 Pero aun asi esta tenia que inicializarse dentro del bloque asi que meti  el código pBloque2 =  new Punto(500, 600); dentro del código 
+
+
+#### ¿Por qué el objeto pBloque se destruye al salir del bloque y pBloque2 no? Recuerda de nuevo, pBloque2 es un objeto o es una referencia a un objeto? ¿En qué parte de la memoria se almacena pBloque2? ¿En qué parte de la memoria se almacena el objeto al que apunta pBloque2?
+
+Porque el pBloque2 es una referencia a un  objeto dinamico ( el cual solo se puede borrar de manera manual) y aunque el pBloque2 esta apuntando (con ayuda del puntero jaja) a un objeto dinamico, este igual pertenece a la memoria stack como pBloque 
+
+
