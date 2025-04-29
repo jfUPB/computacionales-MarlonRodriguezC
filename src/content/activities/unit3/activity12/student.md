@@ -4,7 +4,7 @@ No compila ya que tiene un erro en la en la linea 47, 'pBloque2': identificador 
 , esto se debe ya que cuando se crea el new punto con ayuda del puntero, este se inicializa dentro del bloque por tanto este no se puede acceder, ni borrar.
 
 Para poder hacer esto se podría dejar el puntero antes del bloque primero me guie de la  este ejemplo que encontré en Google 
-
+``` cpp
  MiClase* puntero_objeto = nullptr;
 
     // 2. Asignar memoria para el objeto usando 'new'
@@ -19,7 +19,7 @@ Para poder hacer esto se podría dejar el puntero antes del bloque primero me gu
         delete puntero_objeto;
         puntero_objeto = nullptr; // Se recomienda asignar a nullptr para evitar errores futuros
     }
-
+``` 
 Y cree dos líneas de código fuera del bloque 
 Punto* pBloque2 = nullptr;
 pBloque2 =  new Punto(500, 600);
