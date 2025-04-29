@@ -94,3 +94,9 @@ int main() {
 
     return 0;
 }
+
+
+Código fuente de tu programa.
+Explica cómo aplicaste cada concepto en tu ejemplo.
+Análisis detallado de la memoria. Indica en qué segmento de memoria se está almacenando cada variable y objeto.
+
